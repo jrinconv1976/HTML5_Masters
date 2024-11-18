@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="top">
+        <div id="room-name">Room Name</div>
+        <div id="time">12:00 PM</div>
+        <div id="date">Tuesday, July 27, 2021</div>
+    </section>
+
+    <section id="view">
+        <div class="card active" id="card-welcome">
+            <div></div>
+            <div class="text welcome-text">
+                <h1>Welcome</h1>
+                <h2>Choose a source from the menu below to get started.</h2>
+            </div>
+        </div>
+
+        <div class="card" id="card-pc">
+            <div class="icon">
+                <img src="./assets/img/PC.png" />
+            </div>
+            <div class="text">
+                <h1>Room PC</h1>
+                <h2>Follow the on-screen instructions to connect your video call.</h2>
+            </div>
+        </div>
+
+        <div class="popup">
+            <div class="card" id="popup-help">
+                <div class="icon">
+                    <img src="./assets/img/Amenities.png" />
+                </div>
+                <div class="text">
+                    <h1>Help</h1>
+                    <h2>Call <span id="help-number">x1234</span> for assistance with this room.</h2>
+                    <h3>
+                        <button class="normal cancel">Cancel</button>
+                    </h3>
+                </div>
+            </div>
+            
+            <div class="card " id="popup-shutdown">
+                <div class="icon">
+                    <img src="./assets/img/Power.png" />
+                </div>
+                <div class="text">
+                    <h1>Shutdown</h1>
+                    <h2>Are you sure you want to shutdown the system?</h2>
+                    <h3>
+                        <button class="danger" id="btn-shutdown-shutdown">Shutdown</button>
+                        <button class="normal cancel">Cancel</button>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bottom">
+        <div class="system">
+            <button id="btn-shutdown">
+                <img class="icon" src="./assets/img/Power_Dark.png" />
+                <span class="text">Shutdown</span>
+            </button>
+        </div>
+        <div class="sources">
+            <button id="btn-pc">
+                <img class="icon" src="./assets/img/Windows_Dark.png" />
+                <span class="text">Room PC</span>
+            </button>
+        </div>
+        <div class="settings">
+            <button id="btn-help">
+                <img class="icon" src="./assets/img/Help_Dark.png" />
+                <span class="text">Help</span>
+            </button>
+        </div>
+    </section>
+    <script src="bundle.js"></script>
+</body>
+</html>
